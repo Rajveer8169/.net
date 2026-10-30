@@ -1,0 +1,128 @@
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 35px;
+    font-weight: 800;
+    margin: 30px 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.2);
+}
+
+/* Create New Button */
+p a {       
+    display: inline-block;
+    padding: 11px 20px;
+    margin-bottom: 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+    p a:hover {
+        background-color: #1d4ed8;
+        color: #ffffff;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tbody {
+    background-color: #f1f5f9;
+}
+
+/* Employee Table */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 30px;
+    
+    border-radius: 8px;
+    
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+    /* Table Header */
+    table.table thead {
+        color: #ffffff;
+    }
+
+    table.table th {
+        color: darkred;
+        padding: 15px;
+        text-align: left;
+        font-size: 19px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    /* Table Cells */
+    table.table td {
+        padding: 13px 15px;
+        border-bottom: 1px solid #e2e8f0;
+        color: darkgoldenrod;
+        font-size: 17px;
+    }
+
+    /* Alternate Row Colors */
+    table.table tbody tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    /* Row Hover Effect */
+    table.table tbody tr:hover {
+        background-color: #eff6ff;
+    }
+
+    /* Action Links */
+    table.table td a {
+        display: inline-block;
+        margin: 2px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+        /* Edit Link */
+        table.table td a[asp-action="Edit"] {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        /* Details Link */
+        table.table td a[asp-action="Details"] {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+
+        /* Delete Link */
+        table.table td a[asp-action="Delete"] {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+
+        /* Action Link Hover */
+        table.table td a:hover {
+            opacity: 0.8;
+        }
